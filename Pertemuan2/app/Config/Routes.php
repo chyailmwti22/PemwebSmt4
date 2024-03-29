@@ -8,3 +8,5 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Page::index');
 //$routes->get('/', 'Page::about);
 //$routes->setAutoRoute(true);
+
+$routes->get('/Buku/(:segment)', 'Buku::Detail/$1');

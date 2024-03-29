@@ -7,7 +7,7 @@ class Page extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Home | Unipdu Press',
+            'title' => 'Home | Cahya Ilmawati',
             //'tes' => ['satu', 'dua', 'tiga']
         ];
         return view('page/home', $data);
@@ -17,7 +17,7 @@ class Page extends BaseController
     public function about()
     {
         $data = [
-            'title' => 'About | Unipdu Press',
+            'title' => 'About | Cahya Ilmawati',
             //'tes' => ['satu', 'dua', 'tiga']
         ];
         return view('page/about', $data);
@@ -26,7 +26,7 @@ class Page extends BaseController
     public function contact()
     {
         $data = [
-            'title' => 'contact | Unipdu Press',
+            'title' => 'contact | Cahya Ilmawati',
             'alamat' => [
                 ['tipe' => 'Rumah', 'alamat' => 'Jl. KH. Agus Salim 2A Jombatan', 'kota' => 'Jombang'],
                 ['tipe' => 'Kantor', 'alamat' => 'Komplek Kampus Unipdu', 'kota' => 'Jombang'],

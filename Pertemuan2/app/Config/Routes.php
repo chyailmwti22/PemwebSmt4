@@ -9,4 +9,4 @@ $routes->get('/', 'Page::index');
 //$routes->get('/', 'Page::about);
 //$routes->setAutoRoute(true);
 
-$routes->get('/Buku/(:segment)', 'Buku::Detail/$1');
+//$routes->get('/Buku/(:segment)', 'Buku::Detail/$1');

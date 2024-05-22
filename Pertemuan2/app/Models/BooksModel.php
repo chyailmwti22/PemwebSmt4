@@ -12,7 +12,7 @@ class BooksModel extends Model
 
     protected $allowedFields = ['judul', 'slug', 'penulis', 'penerbit', 'sampul'];
 
-    public function getBuku($slug = false)
+    public function getBooks($slug = false)
     {
         if ($slug == false) {
             return $this->findAll();

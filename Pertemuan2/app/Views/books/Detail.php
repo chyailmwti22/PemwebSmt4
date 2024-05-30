@@ -21,16 +21,15 @@
                                     <?= $buku['penerbit']; ?></small></p>
 
                             <a href="/books/edit/<?= $buku['slug']; ?>" class="btn btn-warning">Ubah</a>
-
-
-                            <form action="/books/<?= $buku['id']; ?>" method="post" class="d-inline">
-                                <?= csrf_field(); ?>
-                                <input type="hidden" name="_method" value="delete">
-                                <button type="submit" class="btn btn-danger" onclick="return confirm('beneran taa? udah yakin taa?')">Hapus</button>
-                            </form>
-
-                            <br>
-                            <a href="/books" class="btn btn-secondary">Kembali ke daftar buku</a>
+                            <div class="row g-0">
+                                <form action="/books/<?= $buku['id']; ?>" method="post" class="d-inline">
+                                    <?= csrf_field(); ?>
+                                    <input type="hidden" name="_method" value="delete">
+                                    <button type="submit" class="btn btn-danger" onclick="return confirm('apakah andayakin menghapus data ini?')">Hapus</button>
+                                </form>
+                                <br></br>
+                                <a href="/books">Kembali ke daftar buku</a>
+                            </div>
                         </div>
                     </div>
                 </div>
